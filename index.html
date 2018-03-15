@@ -18,9 +18,9 @@
                 </ul>    
 
                 <ul class="user-navigation">
-                    <li><a href="search"><a href="search">Поиск</a></li>
+                    <li><a href="search">Поиск</a></li>
                     <li><a href="login.html">Вход</a></li>
-                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="cart.html">Пусто</a></li>
                 </ul>
 
                 <div>    
@@ -33,19 +33,19 @@
         <main class="container">
             <section class="banner">
                 <div class="banner-image active">
-                    <img class="icecream-back" src="./img/slider_ice-cream-1.png" widht="1045" height="881">
+                    <img class="icecream-back" src="./img/slider_ice-cream-1.png" widht="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
                     <h2>Крем-брюле и пломбир с малиновым джемом</h2>
                     <a href="#">Давайте оба!</a>
                 </div>
 
                 <div class="banner-image">
-                    <img class="icecream-back" src="./img/slider_ice-cream-2.png" width="1065" height="859" >
+                    <img class="icecream-back" src="./img/slider_ice-cream-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
                     <h2>Шоколадный пломбир и лимонный сорбет</h2>
                     <a href="#">Давайте оба!</a>
                 </div>
 
                 <div class="banner-image">
-                    <img class="icecream-back" src="./img/slider_ice-cream-3.png" width="1079" height="854">
+                    <img class="icecream-back" src="./img/slider_ice-cream-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
                     <h2>Пломбир с помадкой и клубничный щербет</h2>
                     <a href="#">Давайте оба!</a>
                 </div>
@@ -68,7 +68,7 @@
 
             <section class="catalog">
                 <div class="icecream">
-                    <img src="./img/c_orange.jpg" width="267" height="267">
+                    <img src="./img/c_orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     <p class="price-weight"><span class="price">310₽</span>
                     <span class="weight">/кг</span></p>
                     <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -77,7 +77,7 @@
                 </div>
 
                 <div class="icecream">
-                    <img src="./img/c_coffee.jpg" width="267" height="267">
+                    <img src="./img/c_coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                     <p class="price-weight"><span class="price">380₽</span>
                     <span class="weight">/кг</span></p>
                     <p class="description">Сливочно-кофейное с кусочками шоколада</p>
@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="icecream">
-                    <img src="./img/c_strawberry.jpg" width="267" height="267">
+                    <img src="./img/c_strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                     <p class="price-weight"><span class="price">355₽</span>
                     <span class="weight">/кг</span></p>
                     <p class="description">Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="icecream">
-                    <img src="./img/c_creme-brulee.jpg" width="267" height="267">
+                    <img src="./img/c_creme-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                     <p class="price-weight"><span class="price">415₽</span>
                     <span class="weight">/кг</span></p>
                     <p class="description">Сливочное крем-брюле с карамельной подливкой</p>
@@ -172,5 +172,59 @@
                 <b>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2017</b>
             </p>
         </footer>
+
+        <section class="modal-login">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label class="visually-hidden" for="user-email">Электронная почта</label>
+                    <input class="login-icon-user" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <button class="button" type="submit">Войти</button>
+            </form>
+                <a class="restore" href="#">Забыли пароль?</a>
+                <a class="check-in" href="#">Новая регистрация</a>
+        </section>
+
+        <section class="search-in-catalog">
+            <form class="search-in-catalog" action="https://echo.htmlacademy.ru" method="post">
+                <h3 class="visually-hidden">Что ищем?</h2>
+                <input type="search" name="search" placeholder="Что ищем?">
+            </form>
+        </section>
+
+        <section class="catalog-contents">
+            <h3 class="visually-hidden">Каталог</h3>
+            <select class="catalog-contents">
+                <option>Новинки</option>
+                <option>Сливочное</option>
+                <option selected>Щербеты</option>
+                <option>Фруктовый лед</option>
+                <option>Мелорин</option>
+            </select>
+        </section>
+
+        <section class="popup-feedback">
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                <h2>Мы обязательно вам ответим!</h2>
+                <p>
+                    <label class="visually-hidden" for="user-name">Как вас зовут?</label>
+                    <input type="text" name="name" id="user-name" placeholder="Как вас зовут?">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="email-feedback">Ваша почта для ответа?</label>
+                    <input type="email" name="email" id="email-feedback" placeholder="Ваша почта для ответа?">
+                </p>
+                <p>
+                    <h3 class="visually-hidden">Напишите что-нибудь...</h3>
+                    <textarea class="comment-user" name="text" placeholder="Напишите что-нибудь..."></textarea>
+                </p>
+                <input class="feedback-button" type="submit" value="Отправить">
+                <button class="popup-close" type="button">Закрыть</button>
+            </form>
+        </section>
     </body>
 </html>
