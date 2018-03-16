@@ -12,14 +12,52 @@
 
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li><a href="catalog.html">Каталог</a></li>
+                    <li>
+                        <a href="catalog.html">Каталог</a>
+                        <div class="onhover">
+                            <h3 class="visually-hidden">Каталог</h3>
+                            <select class="catalog-contents">
+                                <option>Новинки</option>
+                                <option>Сливочное</option>
+                                <option selected>Щербеты</option>
+                                <option>Фруктовый лед</option>
+                                <option>Мелорин</option>
+                            </select>
+                        </div>
+                    </li>
                     <li><a href="checkout.html">Доставка и оплата</a></li>
                     <li><a href="abous-us.html">О компании</a></li>
                 </ul>    
 
                 <ul class="user-navigation">
-                    <li><a href="search">Поиск</a></li>
-                    <li><a href="login.html">Вход</a></li>
+                    <li>
+                        <a href="search">Поиск</a>
+                        <div class="onhover">
+                            <form class="search-in-catalog" action="https://echo.htmlacademy.ru" method="post">
+                                <h3 class="visually-hidden">Что ищем?</h3>
+                                <input type="search" name="search" placeholder="Что ищем?">
+                                <button class="button" type="submit">Найти</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="login.html">Вход</a>
+                        <div class="onhover">
+                            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                                <p>
+                                    <label class="visually-hidden" for="user-email">Электронная почта</label>
+                                    <input class="login-icon-user" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                                </p>
+                                <p>
+                                    <label class="visually-hidden" for="user-password">Пароль</label>
+                                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                                </p>
+                                <button class="button" type="submit">Войти</button>
+                            </form>
+                            <a class="restore" href="#">Забыли пароль?</a>
+                            <a class="check-in" href="#">Новая регистрация</a>
+                        </div>
+                    </li>
                     <li><a href="cart.html">Пусто</a></li>
                 </ul>
 
@@ -149,7 +187,7 @@
                 </div>
 
                 <div class="map"></div>
-            </section>
+            </section>      
         </main>
 
         <footer class="main-footer">
@@ -172,40 +210,6 @@
                 <b>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2017</b>
             </p>
         </footer>
-
-        <section class="modal-login">
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label class="visually-hidden" for="user-email">Электронная почта</label>
-                    <input class="login-icon-user" id="user-email" type="email" name="email" placeholder="Электронная почта">
-                </p>
-                <p>
-                    <label class="visually-hidden" for="user-password">Пароль</label>
-                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                </p>
-                <button class="button" type="submit">Войти</button>
-            </form>
-                <a class="restore" href="#">Забыли пароль?</a>
-                <a class="check-in" href="#">Новая регистрация</a>
-        </section>
-
-        <section class="search-in-catalog">
-            <form class="search-in-catalog" action="https://echo.htmlacademy.ru" method="post">
-                <h3 class="visually-hidden">Что ищем?</h2>
-                <input type="search" name="search" placeholder="Что ищем?">
-            </form>
-        </section>
-
-        <section class="catalog-contents">
-            <h3 class="visually-hidden">Каталог</h3>
-            <select class="catalog-contents">
-                <option>Новинки</option>
-                <option>Сливочное</option>
-                <option selected>Щербеты</option>
-                <option>Фруктовый лед</option>
-                <option>Мелорин</option>
-            </select>
-        </section>
 
         <section class="popup-feedback">
             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
