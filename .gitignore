@@ -9,3 +9,5 @@ node_modules/
 npm-debug.*
 Thumbs.db
 desktop.ini
+style.css
+normalize.css
