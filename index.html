@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси-Главная</title>
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">-->
     </head>
-    <body>
+    <body class="green">
         <header class="main-header">
             <a class="main-header-logo">
                 <img src="./img/logo.svg" width="154" height="64">
@@ -13,10 +16,10 @@
             <nav class="main-navigation">
                 <ul class="site-navigation">
                     <li>
-                        <a href="catalog.html">Каталог</a>
-                        <ul class="catalog-contents hidden">
+                        <a href="#">Каталог</a>
+                        <ul class="catalog-contents onhover">
                             <li><a href="#">Новинки</a></li>
-                            <li><a href="./catalog.html">Сливочное</a></li>
+                            <li><a href="catalog.html">Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
                             <li><a href="#">Фруктовый лед</a></li>
                             <li><a href="#">Мелорин</a></li>
@@ -40,14 +43,14 @@
                     <li>
                         <a href="login.html">Вход</a>
                         <div class="onhover">
-                            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                            <form class="form-field" action="https://echo.htmlacademy.ru" method="post">
                                 <p>
                                     <label class="visually-hidden" for="user-email">Электронная почта</label>
-                                    <input class="login" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                                    <input class="field" id="user-email" type="email" name="email" placeholder="Электронная почта">
                                 </p>
                                 <p>
                                     <label class="visually-hidden" for="user-password">Пароль</label>
-                                    <input class="login" id="user-password" type="password" name="password" placeholder="Пароль">
+                                    <input class="field" id="user-password" type="password" name="password" placeholder="Пароль">
                                 </p>
                                 <button class="button" type="submit">Войти</button>
                             </form>
@@ -55,31 +58,11 @@
                             <a href="#">Новая регистрация</a>
                         </div>
                     </li>
-                    <li><a href="cart.html">Пусто</a>
-                        <div class="onhover">
-                            <table class="cart-list">
-                                <tr>
-                                    <td><a href="#">x</a></td>
-                                    <td><img src="./img/c_orange.jpg" width="20" height="20"></td>
-                                    <td>Пломбир с апельсиновым джемом</td>
-                                    <td>1,5 кг x 200 руб.</td>
-                                    <td>300 руб.</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">x</a></td>
-                                    <td><img src="./img/c_strawberry.jpg" width="20" height="20"></td>
-                                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                                    <td>1,5 кг x 300 руб.</td>
-                                    <td>450 руб.</td>
-                                </tr>           
-                            </table>
-                            <p>Итого: 750 руб.</p>
-                            <a class="button-cart" href="#">Оформить заказ</a>  
-                        </div>    
+                    <li><a href="cart.html">Пусто</a>  
                     </li>
                 </ul>
 
-                <div>    
+                <div class="time">    
                     <span>С 10 до 20, ежедневно</span>
                     <span>8 812 450-25-25</span>
                 </div>
@@ -186,7 +169,7 @@
 
                 <div class="dispatch">
                     <p class="dispatch-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происхлодит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                    <img class="dispatch_background" src="http://placehold.it/300x100">
+                    <img class="dispatch-background" src="http://placehold.it/300x100">
                     <form class="email">
                         <input type="email" placeholder="Электронная почта">
                         <button type="submit" class="dispatch-btn">Отправить</button>

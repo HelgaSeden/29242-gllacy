@@ -1,0 +1,145 @@
+/*body{
+    margin:0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.green {
+    background-color: #849d8f;
+}
+
+.blue {
+    background-color: #8996a6;
+}
+
+.brown {
+    background-color: #9d8b84;
+}
+
+.banner-image {
+    display: none;
+}
+
+.banner-image.active {
+    display: block;
+}
+
+.main-navigation li {
+    list-style: none;
+}
+
+.site-navigation li a {
+    line-height: 18px;
+    color: #ffffff;
+}
+.user-navigation {
+    font-size: 14px; 
+    line-height: 16px;
+    font-weight: 500;
+}
+.user-navigation a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.visually-hidden,
+.onhover {
+    display: none;
+}
+
+.main-navigation li:hover .onhover {
+    display: block;
+}
+
+.time span:first-child {
+    font-size: 14px;
+}
+
+.time span {
+    font-size: 22px;
+    line-height: 24px;
+}
+.banner h2 {
+    font-size: 60px;
+    line-height: 60,35px;
+}
+
+.banner a {
+    font-size: 32px;
+    line-height: 44px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.promo-actions h2 {
+    font-size: 35px;
+    line-height: 41px;   
+}
+p.promo-description {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.promo-actions a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+span.price {
+    font-size: 45px;
+    line-height: 45px;
+}
+span.weight {
+    font-size: 30px;
+    line-height: 45px;
+}
+p.description {
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: underline;
+}
+section.description {
+    color: #323232;
+    background-image: url("../img/wafel.jpg");
+}
+.description h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.description p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+section.info .news {
+    color: #323232;
+    background-image: url("../img/news-strawberry.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.news h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.news a {
+    color: #323232;
+    font-size: 24px;
+    line-height: 30px;
+}
+section.info .dispatch {
+    background-image: url("../img/bg-post.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.dispatch p {
+    color: #323232;
+}
+.dispatch button{
+    background-color: #f06441;*/
+}

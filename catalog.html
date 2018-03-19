@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси-Каталог</title>
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">-->
     </head>
-    <body>
+    <body class="green">
         <header class="main-header">
             <a class="main-header-logo" href="index.html">
                 <img src="./img/logo.svg" width="154" height="64">
@@ -13,10 +16,10 @@
             <nav class="main-navigation">
                 <ul class="site-navigation">
                     <li class="active">
-                        <a href="catalog.html">Каталог</a>
+                        <a href="#">Каталог</a>
                         <ul class="catalog-contents hidden">
                             <li><a href="#">Новинки</a></li>
-                            <li><a href="#">Сливочное</a></li>
+                            <li><a>Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
                             <li><a href="#">Фруктовый лед</a></li>
                             <li><a href="#">Мелорин</a></li>
@@ -40,14 +43,14 @@
                     <li>
                         <a href="login.html">Вход</a>
                         <div class="onhover">
-                            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                            <form class="form-field" action="https://echo.htmlacademy.ru" method="post">
                                 <p>
                                     <label class="visually-hidden" for="user-email">Электронная почта</label>
-                                    <input class="login" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                                    <input class="field" id="user-email" type="email" name="email" placeholder="Электронная почта">
                                 </p>
                                 <p>
                                     <label class="visually-hidden" for="user-password">Пароль</label>
-                                    <input class="login" id="user-password" type="password" name="password" placeholder="Пароль">
+                                    <input class="field" id="user-password" type="password" name="password" placeholder="Пароль">
                                 </p>
                                 <button class="button" type="submit">Войти</button>
                             </form>
@@ -79,7 +82,7 @@
                     </li>
                 </ul>
 
-                <div>    
+                <div class="time">    
                     <span>С 10 до 20, ежедневно</span>
                     <span>8 812 450-25-25</span>
                 </div>
