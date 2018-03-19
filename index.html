@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси-Главная</title>
-        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">-->
+        <link href="css/style.css" rel="stylesheet"> -->
     </head>
     <body>
         <header class="main-header">
@@ -43,14 +43,14 @@
                     <li>
                         <a href="login.html">Вход</a>
                         <div class="onhover">
-                            <form class="form-field" action="https://echo.htmlacademy.ru" method="post">
+                            <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
                                 <p>
                                     <label class="visually-hidden" for="user-email">Электронная почта</label>
-                                    <input class="field" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                                    <input class="form-field" id="user-email" type="email" name="email" placeholder="Электронная почта">
                                 </p>
                                 <p>
                                     <label class="visually-hidden" for="user-password">Пароль</label>
-                                    <input class="field" id="user-password" type="password" name="password" placeholder="Пароль">
+                                    <input class="form-field" id="user-password" type="password" name="password" placeholder="Пароль">
                                 </p>
                                 <button class="button" type="submit">Войти</button>
                             </form>
@@ -108,8 +108,10 @@
             <section class="catalog">
                 <div class="icecream">
                     <img src="./img/c_orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                    <p class="price-weight"><span class="price">310₽</span>
-                    <span class="weight">/кг</span></p>
+                    <p class="price-weight">
+                        <span class="price">310₽</span>
+                        <span class="weight">/кг</span>
+                    </p>
                     <p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                     <button type="button" class="catalog-btn">Быстрый просмотр</button>
                     <img class="hit" src="./img/hit.svg" width="61" height="61">
@@ -117,8 +119,10 @@
 
                 <div class="icecream">
                     <img src="./img/c_coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-                    <p class="price-weight"><span class="price">380₽</span>
-                    <span class="weight">/кг</span></p>
+                    <p class="price-weight">
+                        <span class="price">380₽</span>
+                        <span class="weight">/кг</span>
+                    </p>
                     <p class="description">Сливочно-кофейное с кусочками шоколада</p>
                     <button type="button" class="catalog-btn">Быстрый просмотр</button>
                     <img class="hit" src="./img/hit.svg" width="61" height="61">
@@ -126,8 +130,10 @@
 
                 <div class="icecream">
                     <img src="./img/c_strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                    <p class="price-weight"><span class="price">355₽</span>
-                    <span class="weight">/кг</span></p>
+                    <p class="price-weight">
+                        <span class="price">355₽</span>
+                        <span class="weight">/кг</span>
+                    </p>
                     <p class="description">Сливочно-клубничное с присыпкой из белого шоколада</p>
                     <button type="button" class="catalog-btn">Быстрый просмотр</button>
                     <img class="hit" src="./img/hit.svg" width="61" height="61">
@@ -135,8 +141,10 @@
 
                 <div class="icecream">
                     <img src="./img/c_creme-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-                    <p class="price-weight"><span class="price">415₽</span>
-                    <span class="weight">/кг</span></p>
+                    <p class="price-weight">
+                        <span class="price">415₽</span>
+                        <span class="weight">/кг</span>
+                    </p>
                     <p class="description">Сливочное крем-брюле с карамельной подливкой</p>
                     <button type="button" class="catalog-btn">Быстрый просмотр</button>
                     <img class="hit" src="./img/hit.svg" width="61" height="61">
@@ -168,8 +176,7 @@
                 </div>
 
                 <div class="dispatch">
-                    <p class="dispatch-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происхлодит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                    <img class="dispatch-background" src="http://placehold.it/300x100">
+                    <p class="dispatch-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                     <form class="email">
                         <input type="email" placeholder="Электронная почта">
                         <button type="submit" class="dispatch-btn">Отправить</button>
