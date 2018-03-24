@@ -18,7 +18,7 @@
                     <li>
                         <a href="#">Каталог</a>
                         <ul class="catalog-contents onhover">
-                            <li><a href="#">Новинки</a></li>
+                            <li class="novelties"><a href="#">Новинки</a></li>
                             <li><a href="catalog.html">Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
                             <li><a href="#">Фруктовый лед</a></li>
@@ -32,10 +32,10 @@
                 <ul class="user-navigation">
                     <li>
                         <a href="#">Поиск</a>
-                        <div class="onhover">
-                            <form class="search" action="https://echo.htmlacademy.ru" method="post">
+                        <div class="field-search onhover">
+                            <form action="https://echo.htmlacademy.ru" method="post">
                                 <h3 class="visually-hidden">Что ищем?</h3>
-                                <input type="search" name="search" placeholder="Что ищем?">
+                                <input class="search field" type="search" name="search" placeholder="Что ищем?">
                             </form>
                         </div>
                     </li>
@@ -45,11 +45,11 @@
                             <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
                                 <p>
                                     <label class="visually-hidden" for="user-email">Электронная почта</label>
-                                    <input class="form-field" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                                    <input class="form field" id="user-email" type="email" name="email" placeholder="Электронная почта">
                                 </p>
                                 <p>
                                     <label class="visually-hidden" for="user-password">Пароль</label>
-                                    <input class="form-field" id="user-password" type="password" name="password" placeholder="Пароль">
+                                    <input class="form field" id="user-password" type="password" name="password" placeholder="Пароль">
                                 </p>
                                 <button class="button" type="submit">Войти</button>
                             </form>
@@ -171,7 +171,7 @@
                 </div>
             </section>
 
-            <section class="description">
+            <section class="advantages">
                 <h2>Магазин Глэйси &mdash; это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h2>
                 <ul>
                     <li><img src="http://placehold.it/50x50">
@@ -196,11 +196,11 @@
                 </div>
 
                 <div class="dispatch">
-                    <div>
-                        <p class="dispatch-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                        <form class="email">
-                            <input type="email" placeholder="Электронная почта">
-                            <button type="submit" class="button">Отправить</button>
+                    <div class="dispatch-description">
+                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                        <form>
+                            <input class="email field" type="email" placeholder="Электронная почта">
+                            <button class="button" type="submit">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -246,15 +246,15 @@
                 <h2>Мы обязательно вам ответим!</h2>
                 <p>
                     <label class="visually-hidden" for="user-name">Как вас зовут?</label>
-                    <input type="text" name="name" id="user-name" placeholder="Как вас зовут?">
+                    <input class="feedback field" type="text" name="name" id="user-name" placeholder="Как вас зовут?">
                 </p>
                 <p>
                     <label class="visually-hidden" for="email-feedback">Ваша почта для ответа?</label>
-                    <input type="email" name="email" id="email-feedback" placeholder="Ваша почта для ответа?">
+                    <input class="email-feedback field" type="email" name="email" id="email-feedback" placeholder="Ваша почта для ответа?">
                 </p>
                 <p>
                     <h3 class="visually-hidden">Напишите что-нибудь...</h3>
-                    <textarea class="comment-user" name="text" placeholder="Напишите что-нибудь..."></textarea>
+                    <textarea class="comment-user field" name="text" placeholder="Напишите что-нибудь..."></textarea>
                 </p>
                 <input class="button submit" type="submit" value="Отправить">
                 <button class="popup-close" type="button">Закрыть</button>

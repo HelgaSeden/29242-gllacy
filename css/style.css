@@ -9,17 +9,83 @@ body {
     background-color: #849d8f;
 }
 
+input {
+    font-family: inherit;
+}
+
+.visually-hidden,
+.onhover {
+    display: none;
+}
+
+.search { 
+    border: 1px solid rgb(211, 211, 210);
+    border-radius: 5px;
+    width: 315px;
+    height: 48px;
+}
+
+.field {
+    border: 1px solid rgb(178, 178, 178);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.52);
+}
+
+.field:hover {
+    border: 2px solid rgb(154, 154, 154);
+}
+
+.field:focus {
+    border: 2px solid rgb(46, 136, 228);
+    outline: none;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
 .button {
     background: linear-gradient(#f26843, #e74b36);
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     border: none;
-    height: 46px;
     border-radius: 21px;
-    color: #ffffff;
+    height: 46px;
     padding: 11px 30px;
-    line-height: 24px;
     font-size: 18px;
+    line-height: 24px;
     font-weight: 700;
+    color: #ffffff;
+}
+
+.field-search {
+    border-radius: 6px;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+    width: 341px;
+    height: 84px;
+}
+
+.main-navigation li,
+.about-footer li,
+.advantages li,
+.breadcrumbs li,
+.pagination li,
+.footer-social li {
+    list-style: none;
+}
+
+.catalog-contents a,
+.user-navigation a,
+.banner a,
+.promo-actions a,
+.contacts a,
+.catalog.active,
+.pagination a {
+    text-decoration: none;
 }
 
 .banner-image .button {
@@ -34,10 +100,6 @@ body {
     display: block;
 }
 
-.main-navigation li {
-    list-style: none;
-}
-
 .site-navigation a {
     line-height: 18px;
     color: #ffffff;
@@ -45,32 +107,23 @@ body {
 
 .catalog-contents {
     background-color: rgb(248, 247, 244);
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     width: 179px;
     height: 209px;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .catalog-contents li {
     display: block;
-    text-align: left;
-    padding-left: 10px;
 }
 
 .catalog-contents a {
-    display: block;
     color: #323232;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
-    text-decoration: none;
-}
-
-.catalog-contents li:first-child a{
-    border-bottom: 1px solid rgba(50, 50, 50, 0.2);
-    font-weight: 700;
 }
 
 .catalog-contents li:hover {
@@ -85,11 +138,19 @@ body {
     height: 28px;
 }
 
-.catalog-contents .active a {
+.active-page {
     background-color: rgb(208, 112, 88);
-    color: #ffffff;
     width: 143px;
     height: 28px;
+}
+
+.active-page a {
+    color: #ffffff;
+}
+
+.novelties {
+    border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+    font-weight: 700;
 }
 
 .user-navigation {
@@ -99,44 +160,13 @@ body {
 }
 
 .user-navigation a {
-    text-decoration: none;
     color: #ffffff;
 }
 
-.visually-hidden,
-.onhover {
-    display: none;
-}
-
-.search {
-    border-radius: 6px;
-    background-color: rgb(248, 247, 244);
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-    width: 341px;
-    height: 84px;
-}
-
-input[type="search"] {
-    width: 311px;
-    height: 44px;
-}
-
-input[type="search"]:hover {
-    border: 2px solid rgb(154, 154, 154);
-}
-
-input[type="search"]:focus {
-    border: 2px solid rgb(46, 136, 228);
-}
-
-input[type="search"]:focus::placeholder {
-    color: transparent;
-}
-
 .login {
-  border-radius: 6px;
   background-color: rgb(248, 247, 244);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
   width: 277px;
   height: 214px;
 }
@@ -145,37 +175,10 @@ input[type="search"]:focus::placeholder {
     color: #323232;
 }
 
-.promo-left {
-    background-image: url(../img/banner-raspberry.jpg);
-    width: 560px;
-    height: 229px;
-    border-radius: 15px;
+.form.field {
+    width: 245px;
+    height: 48px;
 }
-
-.promo-right {
-    background-image: url(../img/banner-chocolate.jpg);
-    width: 560px;
-    height: 229px;
-    border-radius: 15px;
-}
-
-.icecream:hover>.onhover,
-.main-navigation :hover>.onhover {
-    display: block;
-}
-
-.icecream img {
-    border-radius: 50%;
-}
-
-.icecream:hover {
-    border-radius: 5px;
-    background-color: rgba(248, 247, 244, 0.2);
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
-    width: 323px;
-    height: 440px;
-}
-
 
 .time span:first-child {
     font-size: 14px;
@@ -184,6 +187,37 @@ input[type="search"]:focus::placeholder {
 .time span {
     font-size: 22px;
     line-height: 24px;
+}
+
+.promo-left {
+    background-image: url(../img/banner-raspberry.jpg);
+    border-radius: 15px;
+    width: 560px;
+    height: 229px;
+}
+
+.promo-right {
+    background-image: url(../img/banner-chocolate.jpg);
+    border-radius: 15px;
+    width: 560px;
+    height: 229px;
+}
+
+.icecream:hover > .onhover,
+.main-navigation :hover > .onhover {
+    display: block;
+}
+
+.icecream img {
+    border-radius: 50%;
+}
+
+.icecream:hover {
+    background-color: rgba(248, 247, 244, 0.2);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 323px;
+    height: 440px;
 }
 
 .banner h2 {
@@ -195,7 +229,6 @@ input[type="search"]:focus::placeholder {
     font-size: 32px;
     line-height: 44px;
     color: #ffffff;
-    text-decoration: none;
 }
 
 .promo-actions h2 {
@@ -208,18 +241,15 @@ input[type="search"]:focus::placeholder {
     line-height: 22px;
 }
 
-.promo-actions a {
-    text-decoration: none;
+.price-weight span {
+    line-height: 45px;
 }
-
 .price-weight span.price {
     font-size: 45px;
-    line-height: 45px;
 }
 
 .price-weight span.weight {
     font-size: 30px;
-    line-height: 45px;
 }
 
 .icecream .description {
@@ -229,23 +259,22 @@ input[type="search"]:focus::placeholder {
     text-decoration: underline;
 }
 
-section.description {
-    color: #323232;
+.advantages {
     background-image: url("../img/wafel.jpg");
-    position: absolute-center;
     border-radius: 10px;
     width: 1146px;
     height: 306px;
-    z-index: 125;
+    color: #323232;
+
 }
 
-.description h2 {
+.advantages h2 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
 }
 
-.description p {
+.advantages p {
     display: inline;
     font-size: 16px;
     line-height: 22px;
@@ -254,12 +283,11 @@ section.description {
 }
 
 .info .news {
-    color: #323232;
     background-image: url("../img/news-strawberry.jpg");
-    background-position: left;
     border-radius: 15px;
     width: 560px;
     height: 220px;
+    color: #323232;
     word-wrap:break-word;
 }
 
@@ -276,27 +304,27 @@ section.description {
 }
 
 .info .dispatch {
-    width: 560px;
-    height: 220px;
     background: url("../img/bg-post.svg") no-repeat;
     border-radius: 10px;
-    color: #5a5a5a;
+    width: 560px;
+    min-height: 220px;
     padding: 5px;
-}
-
-.dispatch div {
-    background: rgb(248, 247, 244);
-    border-radius: 10px;
-    width: 549px;
-    height: 211px;
-}
-
-.dispatch p {
-    margin: 0px;
+    color: #5a5a5a;
 }
 
 .dispatch-description {
+    background: rgb(248, 247, 244);
     border-radius: 10px;
+    width: 549px;
+}
+
+.dispatch-description p {
+    margin: 0;
+}
+
+.email.field {
+    width: 372px;
+    height: 48px;
 }
 
 .contacts {
@@ -304,11 +332,7 @@ section.description {
     border-radius: 15px;
     color: #323232;
     width: 302px;
-    height: 305px;
-}
-
-.contacts a {
-    text-decoration: none;
+    min-height: 305px;
 }
 
 .phone a {
@@ -330,16 +354,9 @@ section.description {
     font-weight: 700;
 }
 
-.feedback-form-button {
-    display: block;
-    font-size: 18px;
-    line-height: 24px;
-    color: #fefefe;
-}
-
-.popup-feedback {
-    border-radius: 10px;
+.popup-feedback {  
     background-color: rgb(248, 247, 244);
+    border-radius: 10px;
     width: 478px;
     height: 443px;
 }
@@ -351,65 +368,42 @@ section.description {
     color: #323232;
 }
 
-.popup-feedback input:not(.submit) {
-    border: 1px solid rgb(178, 178, 178);
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.52);
+.feedback.field,
+.email-feedback.field {
     width: 271px;
     height: 48px;
 }
 
-.popup-feedback input:not(.submit):hover,
-textarea:hover {
+.feedback.field:hover,
+.email-feedback.field:hover {
     border: 2px solid rgb(154, 154, 154);
 }
 
-.popup-feedback input:not(.submit):focus,
-textarea:focus {
+.feedback.field:focus,
+.email-feedback.field:focus {
     border: 2px solid rgb(46, 136, 228);
     outline: none;
 }
 
-.popup-feedback input:focus::placeholder,
-textarea:focus::placeholder {
-    color: transparent;
-}
-
-textarea {
-    border: 1px solid rgb(178, 178, 178);
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.52);
+.comment-user {
     width: 432px;
-    height: 159px;
-}
-
-.popup-feedback .submit,
-textarea {
-    outline: none;
+    min-height: 159px;
 }
 
 .map {
     background-image: url("../img/map.jpg");
-    position: absolute-left;
     width: 1250px;
     height: 430px;
-    z-index: 86;
 }
 
 .about-footer li:not(:first-child) {
     font-size: 13px;
     line-height: 18px;
-    font-weight: 500;
-    
+    font-weight: 500; 
 }
 
 .about-footer a {
     color: #ffffff;
-}
-
-.about-footer li,
-.description li {
-    list-style-type: none;
 }
 
 .about-footer li:first-child {
@@ -434,13 +428,12 @@ textarea {
     width: 87px;
     height: 32px;
     border-radius: 21px;
-    text-decoration: none;
 }
 
 .cart {
   border-radius: 5px;
   background-color: rgb(248, 247, 244);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.4);
   width: 540px;
   height: 242px;
   color: #323232;
@@ -458,15 +451,14 @@ textarea {
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
-    list-style: none;
 }
 
-.page-navigation h2{
+.page-navigation h2 {
     font-size: 35px;
     line-height: 41px;
 }
 
-.filters h4{
+.filters h4 {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
@@ -480,15 +472,15 @@ textarea {
     font-weight: 500;
 }
 
-select {
+.sorting-by {
     background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 21px;
     width: 194px;
     height: 37px;
-    border-radius: 21px;
     color: #ffffff;
 }
 
-select:hover {
+.sorting-by:hover {
     color: #323232;
 }
 
@@ -500,22 +492,27 @@ select:hover {
     color: #ffffff;
 }
  
-.fat p {
+ .fat-selection {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 21px;
+    width: 415px;
+    height: 37px;
+}
+
+.fat-selection p {
     display: inline;
+}
+
+.fillings-selection {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 21px;
+    width: 703px;
+    height: 37px;
 }
 
 .fillings p {
     display: inline;
 }
-
-/*.fat:not(h4) p{
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 194px;
-    height: 37px;
-    border-radius: 21px;
-    color: #ffffff;
-}
-*/
 
 .submit input {
     border: 2px solid rgb(255, 255, 255);
@@ -536,38 +533,30 @@ select:hover {
 .submit input:active {
     border: none;
     background-color: rgb(237, 237, 237);
-    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.9);
+    box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.9);
     width: 144px;
     height: 37px;
-}
-
-.pagination li {
-    list-style-type: none;
-}
-
-.pagination a {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #ffffff;
-    text-decoration: none;
-    width: 27px;
-    height: 26px;
 }
 
 .pagination {
     display: inline-block;
 }
 
-.pagination li {
-    display: inline;
-    padding: 0px;
-    margin: 0px;
-}
-
 .pagination a {
     display: inline-block;
     border-radius: 50%;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 27px;
+    height: 26px;
+}
+
+.pagination li {
+    display: inline;
+    padding: 0;
+    margin: 0;
 }
 
 .pagination a.active {
@@ -580,4 +569,3 @@ select:hover {
 .pagination li a:hover:not(.active) {
     background-color: rgba(255, 255, 255, 0.2);
 }
-
