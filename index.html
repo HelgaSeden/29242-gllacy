@@ -32,10 +32,11 @@
                 <ul class="user-navigation">
                     <li>
                         <a href="#">Поиск</a>
-                        <div class="field-search onhover">
+                        <div class="form-search onhover">
                             <form action="https://echo.htmlacademy.ru" method="post">
                                 <h3 class="visually-hidden">Что ищем?</h3>
                                 <input class="search field" type="search" name="search" placeholder="Что ищем?">
+                                <button class="button" type="submit">Найти</button>
                             </form>
                         </div>
                     </li>
@@ -45,11 +46,11 @@
                             <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
                                 <p>
                                     <label class="visually-hidden" for="user-email">Электронная почта</label>
-                                    <input class="form field" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                                    <input class="entry field" id="user-email" type="email" name="email" placeholder="Электронная почта">
                                 </p>
                                 <p>
                                     <label class="visually-hidden" for="user-password">Пароль</label>
-                                    <input class="form field" id="user-password" type="password" name="password" placeholder="Пароль">
+                                    <input class="entry field" id="user-password" type="password" name="password" placeholder="Пароль">
                                 </p>
                                 <button class="button" type="submit">Войти</button>
                             </form>
@@ -81,12 +82,12 @@
                         </div>
                     </li>
                 </ul>
+            </nav> 
 
                 <div class="time">    
                     <span>С 10 до 20, ежедневно</span>
-                    <span>8 812 450-25-25</span>
+                    <span>8 812 450-25-25&nbsp;</span>
                 </div>
-            </nav>    
         </header>
 
         <main class="container">
@@ -198,7 +199,7 @@
                 <div class="dispatch">
                     <div class="dispatch-description">
                         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                        <form>
+                        <form action="https://echo.htmlacademy.ru" method="post">
                             <input class="email field" type="email" placeholder="Электронная почта">
                             <button class="button" type="submit">Отправить</button>
                         </form>

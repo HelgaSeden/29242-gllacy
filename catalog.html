@@ -32,10 +32,11 @@
                 <ul class="user-navigation">
                     <li>
                         <a href="#">Поиск</a>
-                        <div class="field-search onhover">
+                        <div class="form-search onhover">
                             <form action="https://echo.htmlacademy.ru" method="post">
                                 <h3 class="visually-hidden">Что ищем?</h3>
                                 <input class="search field" type="search" name="search" placeholder="Что ищем?">
+                                <button class="button" type="submit">Найти</button>
                             </form>
                         </div>
                     </li>
@@ -45,11 +46,11 @@
                             <form class="form-login" action="https://echo.htmlacademy.ru" method="post">
                                 <p>
                                     <label class="visually-hidden" for="user-email">Электронная почта</label>
-                                    <input class="form field" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                                    <input class="entry field" id="user-email" type="email" name="email" placeholder="Электронная почта">
                                 </p>
                                 <p>
                                     <label class="visually-hidden" for="user-password">Пароль</label>
-                                    <input class="form field" id="user-password" type="password" name="password" placeholder="Пароль">
+                                    <input class="entry field" id="user-password" type="password" name="password" placeholder="Пароль">
                                 </p>
                                 <button class="button" type="submit">Войти</button>
                             </form>
@@ -116,7 +117,7 @@
                     </fieldset>
                     <fieldset class="fat">
                         <h4>Жирность:</h4>
-                        <div class="fat-selection">
+                        <div class="fat selection">
                             <p><input id="rad1" name="fat_opt" type="radio" value="0"><label for="rad1">0%</label></p>
                             <p><input id="rad2" name="fat_opt" type="radio" value="10"><label for="rad2">до 10%</label></p>
                             <p><input id="rad3" name="fat_opt" type="radio" value="30"><label for="rad3">до 30%</label></p>
@@ -125,7 +126,7 @@
                     </fieldset>
                     <fieldset class="fillings">
                         <h4>Наполнители:</h4>
-                        <div class="fillings-selection">
+                        <div class="fillings selection">
                             <p><input id="check1" type="checkbox" value="chocolade"><label for="check1">шоколадные</label></p>
                             <p><input id="check2" type="checkbox" value="sugar"><label for="check2">сахарные присыпки</label></p>
                             <p><input id="check3" type="checkbox" value="fruit"><label for="check3">фрукты</label></p>
@@ -133,8 +134,8 @@
                             <p><input id="check5" type="checkbox" value="jam"><label for="check5">джемы</label></p>
                         </div>
                     </fieldset>
-                    <fieldset class="submit">
-                        <input type="submit" value="Применить">
+                    <fieldset>
+                        <input class="submit" type="submit" value="Применить">
                     </fieldset>
                 </form>
             </section> 

@@ -1,5 +1,5 @@
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
@@ -13,11 +13,30 @@ input {
     font-family: inherit;
 }
 
-.visually-hidden,
-.onhover {
-    display: none;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.onhover{
+    display: none;
+}
 .search { 
     border: 1px solid rgb(211, 211, 210);
     border-radius: 5px;
@@ -61,7 +80,7 @@ input {
     color: #ffffff;
 }
 
-.field-search {
+.form-search {
     border-radius: 6px;
     background-color: rgb(248, 247, 244);
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -78,14 +97,12 @@ input {
     list-style: none;
 }
 
-.catalog-contents a,
-.user-navigation a,
-.banner a,
-.promo-actions a,
-.contacts a,
-.catalog.active,
-.pagination a {
+a {
     text-decoration: none;
+}
+
+.site-navigation {
+    text-decoration: underline;
 }
 
 .banner-image .button {
@@ -175,7 +192,7 @@ input {
     color: #323232;
 }
 
-.form.field {
+.entry.field {
     width: 245px;
     height: 48px;
 }
@@ -222,7 +239,7 @@ input {
 
 .banner h2 {
     font-size: 60px;
-    line-height: 60,35px;
+    line-height: 60px;
 }
 
 .banner a {
@@ -244,11 +261,11 @@ input {
 .price-weight span {
     line-height: 45px;
 }
-.price-weight span.price {
+.price-weight .price {
     font-size: 45px;
 }
 
-.price-weight span.weight {
+.price-weight .weight {
     font-size: 30px;
 }
 
@@ -492,29 +509,26 @@ input {
     color: #ffffff;
 }
  
- .fat-selection {
+ .fat.selection {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 21px;
     width: 415px;
     height: 37px;
 }
 
-.fat-selection p {
+.selection p {
     display: inline;
 }
 
-.fillings-selection {
+.fillings.selection {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 21px;
     width: 703px;
     height: 37px;
 }
 
-.fillings p {
-    display: inline;
-}
 
-.submit input {
+.filters .submit {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;;
     background-color: rgba(255, 255, 255, 0.188);
@@ -525,12 +539,12 @@ input {
     outline: none;
 }
 
-.submit input:hover {
+.filters .submit:hover {
     background-color: #ffffff;
     color: #323232;
 }
 
-.submit input:active {
+.filters .submit:active {
     border: none;
     background-color: rgb(237, 237, 237);
     box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.9);
@@ -569,3 +583,91 @@ input {
 .pagination li a:hover:not(.active) {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+/*.main-header-logo {
+    margin-left: 27px;
+    margin-top: 10px;
+}
+
+.main-header {
+    display: flex;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 34px; 
+    align-content: center;
+}
+
+.site-navigation,
+.user-navigation {
+    display: flex;
+    align-content: center;
+    z-index: 1;
+}
+.site-navigation > li,
+.user-navigation > li {
+    margin-right: 15px;
+}
+
+.time {
+    display: block;
+    position: absolute;
+    width: 173px;
+    height: 38px;
+    text-align: right;
+    top: 75px;
+    right: 27px; 
+    z-index: 0;
+}
+
+.time span {
+    display: inline-block;
+}
+
+.user-navigation li {
+    text-align: right;
+    position: relative;
+}
+
+.main-navigation li:hover > .onhover {
+    position: absolute;
+}
+
+.user-navigation li:hover > .onhover {
+    right: 0;
+}
+
+.banner img {
+    display: block;
+    position: absolute;
+    left: 78px;
+    top: 0px;
+    width: 1045px;
+    height: 881px;
+    z-index: 0;
+}
+
+.banner h2 {
+    position: relative;
+    left: 200px;
+    top: 453px;
+    width: 700px;
+    height: 103px;
+    text-align: center;
+}
+
+.banner a {
+    position: relative;
+    top: 450px;
+    left: 400px;
+}
+
+.promo-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+*/
