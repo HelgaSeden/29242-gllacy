@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
@@ -11,11 +11,6 @@ body {
 
 input {
     font-family: inherit;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 .visually-hidden {
@@ -45,9 +40,12 @@ img {
 }
 
 .field {
-    border: 1px solid rgb(178, 178, 178);
+    border: 1px solid rgba(178, 178, 178, 0.52);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.52);
+    padding: 10px 14px;
+    height: 44px;
+    box-sizing: border-box;
 }
 
 .field:hover {
@@ -282,7 +280,6 @@ a {
     width: 1146px;
     height: 306px;
     color: #323232;
-
 }
 
 .advantages h2 {
@@ -456,7 +453,6 @@ a {
   color: #323232;
 }
 
-
 .breadcrumbs a {
     font-size: 14px;
     line-height: 16px;
@@ -508,27 +504,28 @@ a {
     border-radius: 21px;
     color: #ffffff;
 }
- 
- .fat.selection {
+
+.selection p {
+    display: inline-block; 
+    vertical-align: bottom;
+}
+
+.selection {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 21px;
+}
+ 
+.fat {
     width: 415px;
     height: 37px;
 }
 
-.selection p {
-    display: inline;
-}
-
-.fillings.selection {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 21px;
+.fillings {
     width: 703px;
     height: 37px;
 }
 
-
-.filters .submit {
+.filters .submit-btn {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;;
     background-color: rgba(255, 255, 255, 0.188);
@@ -539,12 +536,12 @@ a {
     outline: none;
 }
 
-.filters .submit:hover {
+.filters .submit-btn:hover {
     background-color: #ffffff;
     color: #323232;
 }
 
-.filters .submit:active {
+.filters .submit-btn:active {
     border: none;
     background-color: rgb(237, 237, 237);
     box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.9);
@@ -584,21 +581,24 @@ a {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/*.main-header-logo {
-    margin-left: 27px;
-    margin-top: 10px;
-}
-
 .main-header {
     display: flex;
+    justify-content: space-between;
+}
+
+.main-header-logo {
+    margin-left: 27px;
+    margin-top: 10px;
+    width: 154px;
+    height: 65px;
 }
 
 .main-navigation {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     height: 34px; 
-    align-content: center;
 }
 
 .site-navigation,
@@ -618,9 +618,9 @@ a {
     width: 173px;
     height: 38px;
     text-align: right;
-    top: 75px;
-    right: 27px; 
-    z-index: 0;
+    top: 45px;
+    right: 20px; 
+    z-index: 1;
 }
 
 .time span {
@@ -640,34 +640,39 @@ a {
     right: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .banner img {
     display: block;
     position: absolute;
-    left: 78px;
-    top: 0px;
-    width: 1045px;
-    height: 881px;
+    left: 70px;
+    top: -10px; 
     z-index: 0;
 }
 
 .banner h2 {
-    position: relative;
-    left: 200px;
-    top: 453px;
-    width: 700px;
+    position: absolute;
+    left: 230px;
+    top: 350px;
+    width: 100%;
+    max-width: 700px;
     height: 103px;
     text-align: center;
 }
 
 .banner a {
     position: relative;
-    top: 450px;
+    top: 480px;
     left: 400px;
 }
 
-.promo-action {
+.promo-actions {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 550px;
 }
-*/
+

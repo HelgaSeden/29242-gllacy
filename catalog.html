@@ -102,7 +102,7 @@
 
             <section class="filters">
                 <form>
-                    <fieldset class="sorting">
+                    <fieldset class="filter-category">
                         <h4>Сортировка:</h4>
                         <select class="sorting-by" name="icecream">
                             <option value="popularity">по популярности</option>
@@ -111,11 +111,11 @@
                             <option value="new">по жирности</option>
                         </select>
                     </fieldset>
-                    <fieldset class="price">
+                    <fieldset class="filter-category">
                         <h4>Цена 100 руб. - 500 руб.</h4>
                         <div class="price slider"></div>
                     </fieldset>
-                    <fieldset class="fat">
+                    <fieldset class="filter-category">
                         <h4>Жирность:</h4>
                         <div class="fat selection">
                             <p><input id="rad1" name="fat_opt" type="radio" value="0"><label for="rad1">0%</label></p>
@@ -124,7 +124,7 @@
                             <p><input id="rad4" name="fat_opt" type="radio" value="30+"><label for="rad4">выше 30%</label></p>
                         </div>
                     </fieldset>
-                    <fieldset class="fillings">
+                    <fieldset class="filter-category">
                         <h4>Наполнители:</h4>
                         <div class="fillings selection">
                             <p><input id="check1" type="checkbox" value="chocolade"><label for="check1">шоколадные</label></p>
@@ -135,7 +135,7 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <input class="submit" type="submit" value="Применить">
+                        <input class="submit-btn" type="submit" value="Применить">
                     </fieldset>
                 </form>
             </section> 
