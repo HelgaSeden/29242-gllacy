@@ -148,15 +148,15 @@ a {
 }
 
 .slide-1:checked~.site-wrapper {
-    background: #849d8f url(../img/slider_ice-cream-1.png) 50% 0 no-repeat;
+    background: #849d8f url(../img/slider_ice-cream-1.png) 50% -5px no-repeat;
 }
 
 .slide-2:checked~.site-wrapper {
-    background: #8e9bac url(../img/slider_ice-cream-2.png) 50% 0 no-repeat;
+    background: #8e9bac url(../img/slider_ice-cream-2.png) 50% -5px no-repeat;
 }
 
 .slide-3:checked~.site-wrapper {
-    background: #a08e87 url(../img/slider_ice-cream-3.png) 50% 0 no-repeat;
+    background: #a08e87 url(../img/slider_ice-cream-3.png) 50% -5px no-repeat;
 }
 
 .main-header {
@@ -185,7 +185,6 @@ a {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    top: 5px;
     font-weight: 700;    
 }
 
@@ -198,8 +197,8 @@ a {
     display: block;
     height: 32px;
     line-height: 32px;
-    padding: 1px 13px;
-    margin: 0 1px;
+    padding: 1px 14px 1px 14px;
+    margin: 0;
     text-decoration: underline rgba(255,255,255,0.2);
 } 
 
@@ -352,7 +351,7 @@ a {
     position: relative;
     vertical-align: middle;
     line-height: 32px;
-    top: -1px;
+    top: 1px;
     left: 1px;
 }
 
@@ -405,9 +404,8 @@ a {
     width: 92px;
 }
 
-.login-btn svg {
-    margin-right: 5px;
-    left:  -1px;
+.login-dropdown span {
+    margin-left: 3px;
 }
 
 .login {
@@ -523,12 +521,15 @@ a {
 }
 
 .cart-btn svg {
-    margin-left: 10px;
-    left: -16px;
+    left: -17px;
 }
+
+.active span {
+    margin-left: -14px;
+}
+
 .active-cart svg {
-    left: 0;
-    margin-right: 5px;
+    margin-right: 18px;
 }
 
 .cart {
@@ -664,7 +665,6 @@ a {
     width: 170px;
     margin-left: auto;
     text-align: right;
-    top: -1px;
     font-weight: 700;
 }
 
@@ -695,7 +695,7 @@ a {
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
-    margin: 275px auto 0 auto;
+    margin: 276px auto 0 auto;
 }
 
 .banner .button {
@@ -703,7 +703,7 @@ a {
     width: 278px;
     height: 64px;
     font-size: 32px;
-    line-height: 64px;
+    line-height: 61px;
     vertical-align: middle;
     border-radius: 32px;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -714,7 +714,7 @@ a {
     width: 1148px;
     justify-content: space-between;
     z-index: 1;
-    margin-top: 12px;
+    margin-top: 14px;
     margin-bottom: 34px;
 }
 
@@ -744,7 +744,6 @@ a {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    margin: 15px 0 0 19px;
     padding-bottom: 4px;
 }
 
@@ -752,9 +751,19 @@ a {
     float: right;
     height: 46px;
     line-height: 46px;
-    margin-top: 42px;
-    margin-right: 21px;
+    margin-top: 21px;
+    margin-right: 22px;
     padding: 0 22px;
+}
+
+.raspberry {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.chocolate {
+    margin-left: 18px;
+    margin-top: 14px;
 }
 
 .catalog {
@@ -786,7 +795,7 @@ a {
     height: 345px;
     vertical-align: top;
     text-align: center;
-    margin: 0px -9px;
+    margin: -4px -9px;
 }
 
 .icecream img {
@@ -800,6 +809,8 @@ a {
     position: absolute;
     width: 61px;
     height: 61px;
+    margin-left: 8px;
+    margin-top: 5px;
     background-image: url(../img/hit.svg);
 }
 
@@ -816,10 +827,21 @@ a {
 
 .price-weight span {
     line-height: 45px;
+    line-height: 57px;
 }
 
 .price-weight .price {
     font-size: 45px;
+    margin-left: 8px;
+}
+
+.price-weight svg {
+    margin-left: -3px;
+    margin-top: 8px;
+}
+
+.weight {
+    margin-left: -6px;
 }
 
 .description {
@@ -836,6 +858,8 @@ a {
 .icecream .description {
     line-height: 22px;
     font-weight: 500;
+    margin-top: -5px;
+    margin-left: 14px;
     text-decoration: underline;
 }
 
@@ -863,15 +887,15 @@ a {
     min-height: 306px;
     color: #323232;
     margin-top: 5px;
-    padding-bottom: 12px;
 }
 
 .advantages h2 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
-    margin-left: 15px;
-    margin-top: 25px;
+    margin-left: 20px;
+    margin-top: 29px;
+    letter-spacing: 0.1px;
     padding-top: 20px;    
 }
 
@@ -880,7 +904,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1100px;
-    margin-top: 10px;
+    margin-top: -9px;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 20px;
@@ -937,18 +961,20 @@ a {
     display: flex;
     width: 1148px;
     justify-content: space-between;
-    margin-top: 39px;
+    margin-top: 36px;
 }
 
 .block-info {
     display: block;
     width: 560px;
+    min-height: 220px;
     border-radius: 15px;
     margin: 1px;
 }
 
 .news {
-    background-image: url("../img/news-strawberry.jpg");
+    background: url("../img/news-strawberry.jpg") no-repeat;
+    height: 220px;
     color: #323232;
 }
 
@@ -975,17 +1001,22 @@ a {
 
 .dispatch {
     background: url("../img/bg-post.svg") no-repeat;
-    width: 540px;
-    min-height: 210px;
+    width: 559px;
+    min-height: 220px;
+    margin-top: 0px;
+    margin-right: -6px;
     padding: 5px;
     color: #5a5a5a;
 }
 
-.block-info .dispatch-description {
-    height: 211px;
-    margin-top: -30px;
+.block-info .dispatch-description {   
+    width: 546px; 
+    height: 209px;
+    margin-top: -29px;
+    margin-left: 3px;
     border-radius: 15px;
     background-color: rgb(248, 247, 245);
+    width: 546px;
 }
 
 
@@ -996,34 +1027,34 @@ a {
     line-height: 22px;
     color: #323232;
     margin-left: 20px;
-    margin-top: 29px;
-    padding-top: 25px;
+    margin-top: 31px;
+    padding-top: 26px;
     padding-bottom: 1px;
 }
 
 .dispatch-description form {
     position: relative;
-    margin-left: 19px;
+    margin-left: 18px;
     margin-top: 36px;
 }
 
 .email.field {
-    width: 352px;
-    height: 40px;
+    width: 369px;
+    height: 43px;
     padding-left: 14px;
 }
 
 .dispatch-description .button {
     width: 128px;
     height: 44px;
-    margin-left: 380px; 
-    margin-top: -70px;
+    margin-left: 381px;
+    margin-top: -68px;
     padding: 0;
 }
 
 .location {
     position: relative;
-    margin-top: 39px;
+    margin-top: 29px;
     height: 428px;
 }
 
@@ -1063,22 +1094,38 @@ a {
     font-weight: 700;
 }
 
+.phone {
+    margin-top: -9px;
+}
+
+.opening-hours {
+    margin-top: -12px;
+}
+
 .contacts p {
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
 }
 
+.contacts-container p:first-child {
+    width: 151px;
+    margin-top: 33px;
+}
+
 .contacts .address {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
+    margin-top: -13px;
 }
 
 .contacts-container .button {
     width: 251px;
     height: 44px;
     padding: 0;
+    margin-top: 9px;
+    margin-left: 1px;
     font-size: 18px;
     line-height: 44px;
     text-align: center;
@@ -1241,7 +1288,7 @@ a {
     font-size: 12px;
     line-height: 18px;
     margin-top: -2px;
-    margin-left: 2px;
+    margin-left: 3px;
 }
 
 .htmlacademy-link {
@@ -1255,9 +1302,9 @@ a {
     font-size: 14px;
     line-height: 16px;
     list-style: none;
-    top: 98px;
+    top: 92px;
     padding: 0;
-    margin: 0 0 0 -1px;
+    margin: 0 0 0 -2px;
     z-index: 1;
 }
 
@@ -1282,6 +1329,12 @@ a {
     font-weight: 400;
 }
 
+.page-navigation h2 {
+    height: 33px;
+    font-size: 35px;
+    margin-top: 13px;
+}
+
 .filter-option {
     display: flex;
     flex-flow: row;
@@ -1289,7 +1342,8 @@ a {
     justify-content: space-between;
     width: 860px;
     height: 147px;
-    margin-top: 28px;
+    margin-top: -23px;
+    margin-left: -4px;
 }
 
 .filter-option fieldset {
@@ -1304,7 +1358,8 @@ a {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    margin-left: 15px;
+    margin-left: 18px;
+    margin-top: 17px;
     margin-bottom: 5px;
 }
 
@@ -1337,8 +1392,8 @@ a {
     position: absolute;
     width: 176px;
     height: 4px;
-    background: rgba(248,247,244,.2);
-    top: 16px;
+    background: rgba(248, 247, 244, 0.2);
+    top: 18px;
     left: 21px;
 }
 
@@ -1346,8 +1401,8 @@ a {
     position: absolute;
     width: 106px;
     height: 4px;
-    background: rgb(248,247,244);
-    top: 16px;
+    background: rgb(248, 247, 244);
+    top: 17px;
     left: 45px;
 }
 
@@ -1357,13 +1412,18 @@ a {
     height: 20px;
     background: url(../img/filter-button.svg);
     cursor: pointer;
-    top: 8px;
-    left: 33px;
+    top: 9px
 }
 
+.first-btn {
+    position: relative;
+    left: 35px;
+    top: 10px;
+}
 .second-btn {
     position: relative;
-    left: 131px;
+    left: 133px;
+    top: -10px;
 }
 
 .price.range-slider {
@@ -1411,7 +1471,6 @@ a {
     display: inline-block;
     vertical-align: middle;
     line-height: 36px;
-    margin-bottom: 10px;
 }
 
 .fat label::before {
@@ -1426,9 +1485,9 @@ a {
     background: url(../img/radio-off.svg) 0 0 no-repeat;
     cursor: pointer;
     opacity: 0.8;
-    top: 5px;
+    top: 6px;
     margin-right: 5px;
-    margin-bottom: -5px;
+    margin-bottom: -4px;
 }
 
 .fat-input:checked + label::before {
